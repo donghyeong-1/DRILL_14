@@ -40,5 +40,10 @@ class Bird:
         self.frame = (self.frame + FLY_FRAMES_PER_SECOND * game_framework.frame_time) % FRAMES_PER_WINGBEAT
         self.x += self.dir * FLY_SPEED_PPS * game_framework.frame_time
 
+        half_w = BIRD_DRAW_WIDTH // 2
+        if self.x >= get_canvas_width() - half_w:
+            self.x = get_canvas_width() - half_w
+            self.dir = -1
+
     def draw(self):
         pass
