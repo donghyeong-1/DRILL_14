@@ -22,3 +22,17 @@ FRAME_WIDTH = 183
 FRAME_HEIGHT = 168
 BIRD_DRAW_WIDTH = 100
 BIRD_DRAW_HEIGHT = 100
+
+
+class Bird:
+    image = None
+
+    def __init__(self):
+        if Bird.image is None:
+            Bird.image = load_image('bird_animation.png')
+
+    def update(self):
+        pass
+
+    def draw(self):
+        pass
