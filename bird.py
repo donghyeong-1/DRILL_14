@@ -1,3 +1,4 @@
+import random
 from pico2d import get_canvas_width, load_image
 import game_framework
 
@@ -30,6 +31,10 @@ class Bird:
     def __init__(self):
         if Bird.image is None:
             Bird.image = load_image('bird_animation.png')
+        self.x = random.randint(100, 1500)
+        self.y = random.randint(300, 550)
+        self.frame = float(random.randint(0, FRAMES_PER_WINGBEAT - 1))
+        self.dir = random.choice([-1, 1])
 
     def update(self):
         pass
