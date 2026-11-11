@@ -49,4 +49,8 @@ class Bird:
             self.dir = 1
 
     def draw(self):
-        pass
+        frame_index = int(self.frame)
+        col = frame_index % 5
+        row = 2 - (frame_index // 5)
+        left = col * FRAME_WIDTH
+        bottom = row * FRAME_HEIGHT
