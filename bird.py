@@ -37,7 +37,7 @@ class Bird:
         self.dir = random.choice([-1, 1])
 
     def update(self):
-        pass
+        self.frame = (self.frame + FLY_FRAMES_PER_SECOND * game_framework.frame_time) % FRAMES_PER_WINGBEAT
 
     def draw(self):
         pass
