@@ -44,6 +44,9 @@ class Bird:
         if self.x >= get_canvas_width() - half_w:
             self.x = get_canvas_width() - half_w
             self.dir = -1
+        elif self.x <= half_w:
+            self.x = half_w
+            self.dir = 1
 
     def draw(self):
         pass
