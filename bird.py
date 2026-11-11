@@ -38,6 +38,7 @@ class Bird:
 
     def update(self):
         self.frame = (self.frame + FLY_FRAMES_PER_SECOND * game_framework.frame_time) % FRAMES_PER_WINGBEAT
+        self.x += self.dir * FLY_SPEED_PPS * game_framework.frame_time
 
     def draw(self):
         pass
