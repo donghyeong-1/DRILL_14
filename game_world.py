@@ -3,6 +3,10 @@ world = [[], [], []]  # 0: 배경, 1: 오브젝트, 2: UI
 def add_oject(o, depth=1):
     world[depth].append(o)
 
+
+def add_objects(ol, depth=1):
+    world[depth] += ol
+
 def remove_object(o):
     for layer in world:
         if o in layer:
