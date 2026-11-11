@@ -16,3 +16,9 @@ FRAMES_PER_WINGBEAT = 14   # 1회 날개짓 당 애니메이션 프레임 수 (1
 
 # 1초당 몇 개의 프레임을 증가시켜야 하는가? (초당 약 77.78 FPS)
 FLY_FRAMES_PER_SECOND = FLY_SPEED_MPS / WINGBEAT_DISTANCE_M * FRAMES_PER_WINGBEAT
+
+# bird_animation.png (918x506, 5열x3행) 프레임 규격 및 화면 출력 크기
+FRAME_WIDTH = 183
+FRAME_HEIGHT = 168
+BIRD_DRAW_WIDTH = 100
+BIRD_DRAW_HEIGHT = 100
