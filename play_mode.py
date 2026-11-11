@@ -1,6 +1,7 @@
 from pico2d import *
 import game_world
 import game_framework
+from bird import Bird
 from boy import Boy
 from grass import Grass
 
