@@ -54,3 +54,7 @@ class Bird:
         row = 2 - (frame_index // 5)
         left = col * FRAME_WIDTH
         bottom = row * FRAME_HEIGHT
+        Bird.image.clip_composite_draw(
+            left, bottom, FRAME_WIDTH, FRAME_HEIGHT,
+            0, '', self.x, self.y, BIRD_DRAW_WIDTH, BIRD_DRAW_HEIGHT
+        )
