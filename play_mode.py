@@ -32,8 +32,7 @@ def init():
     game_world.add_oject(grass, 0)
 
     birds = [Bird() for _ in range(10)]
-    for bird in birds:
-        game_world.add_oject(bird, 1)
+    game_world.add_objects(birds, 1)
 
 
 def pause():
